@@ -21,6 +21,10 @@ def get_risk(i, j, hour):
 def get_fuel(i, j, hour):
     t_idx = hour - START_HOUR
     return fuel_consumption_matrix[i][j][t_idx] if 0 <= t_idx < 12 else 0.4
+    
+def get_best_route(...):
+    # Fonksiyon içeriği
+    pass
 
 def compute_travel(i, j, hour, minute):
     dist = distance_matrix[i][j]
